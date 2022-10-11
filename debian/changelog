@@ -1,0 +1,265 @@
+libperl-minimumversion-perl (1.40-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.1.5, no changes needed.
+
+  [ gregor herrmann ]
+  * Import upstream version 1.40.
+  * Update debian/upstream/metadata.
+  * Update years of packaging copyright.
+  * Update (build) dependencies.
+  * Declare compliance with Debian Policy 4.6.0.
+  * Bump debhelper-compat to 13.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 29 Sep 2021 16:08:09 +0200
+
+libperl-minimumversion-perl (1.38-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Brian Cassidy from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Add Testsuite declaration for autopkgtest-pkg-perl.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Niko Tyni ]
+  * Update to debhelper compat level 10
+  * Update to Standards-Version 4.1.4
+  * Declare that the package does not need (fake)root to build
+
+ -- Niko Tyni <ntyni@debian.org>  Sun, 06 May 2018 13:02:26 +0300
+
+libperl-minimumversion-perl (1.38-1) unstable; urgency=medium
+
+  * Update Vcs-Browser URL to cgit web frontend
+  * Imported Upstream version 1.38
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 23 Aug 2014 14:30:25 +0200
+
+libperl-minimumversion-perl (1.37-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 13 May 2014 21:56:35 +0200
+
+libperl-minimumversion-perl (1.36-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 10 May 2014 14:14:07 +0200
+
+libperl-minimumversion-perl (1.35-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Strip trailing slash from metacpan URLs.
+  * debian/copyright: update copyright years and drop stanza about removed
+    files.
+  * Bump required version of libppix-regexp-perl (build) dependency.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 03 May 2014 18:07:25 +0200
+
+libperl-minimumversion-perl (1.32-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 1.30, 1.31 and 1.32
+  * Remove explicit perl Depends covered by ${perl:Depends}
+  * Add versioned (build-)dependency for libppix-regexp-perl.
+    Add versioned (Build-)Depends(-Indep) on libppix-regexp-perl (>= 0.029)
+  * Update debian/copyright file information.
+    Update format to copyright-format 1.0 as released together with Debian
+    policy 3.9.3.
+    Update copyright years for upstream files, bundled copy of
+    Module::Install and debian/* packaging files.
+  * Bump Standards-Version to 3.9.4
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 28 Jun 2013 15:55:02 +0200
+
+libperl-minimumversion-perl (1.28-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Bump debhelper compat to 8
+  * Refresh copyright information
+  * Standards-Version 3.9.1
+  * Drop version dependencies satisfied in oldstable
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+
+  [ Salvatore Bonaccorso ]
+  * Email change: Salvatore Bonaccorso -> carnil@debian.org
+  * debian/control:
+    - Make versioned (Build-)Depends(-Indep) on libparams-util-perl
+      unversioned as version already satisfied in oldstable.
+    - Make verisoned (Build-)Depends(-Indep) on libtest-script-perl and
+      libfile-find-rule-perl-perl unversioned as both not in oldstable
+      and already satisfied in squeeze.
+    - Make (Build-)Depends(-Indep) on perl versioned to perl (>=
+      5.10.1).
+  * debian/copyright: Update copyright years for debian/* packaging.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 04 Mar 2011 21:38:21 +0100
+
+libperl-minimumversion-perl (1.26-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: Update years of copyright for inc/*.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 22 Jul 2010 20:32:26 +0900
+
+libperl-minimumversion-perl (1.25-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * No longer run author tests. Remove build-dep on libtest-pod-perl,
+    libtest-cpan-meta-perl, libpod-simple-perl, libtest-minimumversion-perl.
+    (Closes: #589051)
+  * Bump Standards-Version to 3.9.0 (no changes).
+
+  [ gregor herrmann ]
+  * Lower debhelper build dependency to 7, since there are no more overrides
+    in debian/rules.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 15 Jul 2010 01:29:01 +0900
+
+libperl-minimumversion-perl (1.25-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * New upstream release
+  * Drop patches: fix_578485_breaks_with_perl_5.12.patch applied upstream.
+
+  [ gregor herrmann ]
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 24 May 2010 17:40:49 +0200
+
+libperl-minimumversion-perl (1.24-2) unstable; urgency=low
+
+  * Add myself to Uploaders.
+  * Convert to '3.0 (quilt)' package source format.
+  * Add fix_578485_breaks_with_perl_5.12.patch patch to fix FTBFS when build
+    with Perl 5.12.0. Thanks to Niko Tyni for reporting and submitting the
+    patch (Closes: #578485).
+  * Add versioned Build-Depends-Indep on libtest-minimumversion-perl (>=
+    0.101080) to prevent FTBFS when building with Perl 5.12.0.
+  * Bump Standards-Version to 3.8.4 (no changes).
+  * Refresh debian/copyright: Update Copyright for debian/* packaging.
+  * Remove comment lines from debian/watch file.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Wed, 21 Apr 2010 22:22:18 +0200
+
+libperl-minimumversion-perl (1.24-1) unstable; urgency=low
+
+  [ Brian Cassidy ]
+  * New upstream release
+  * debian/control: Add myself to Uploaders
+  * debian/copyright: Add myself to debian/* section
+
+  [ gregor herrmann ]
+  * Make (build) dependency on libfile-find-rule-perl versioned as per new
+    upstream reuqirements.
+
+ -- Brian Cassidy <brian.cassidy@gmail.com>  Fri, 22 Jan 2010 10:34:33 -0400
+
+libperl-minimumversion-perl (1.22-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Add myself to Uploaders and Copyright
+  * Refresh copyright file to new format
+  * Use override to handle testing
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * debian/control: Changed: (build-)depend on perl instead of perl-
+    modules.
+
+  [ Ansgar Burchardt ]
+  * New upstream release
+    + add (build-)dependency on libperl-critic-perl (>= 1.104)
+  * Use minimal debian/rules.
+  * Add perl (>= 5.10.1) as an alternative to the libpod-simple-perl
+    build-dependency.
+  * Make (build-)dep on perl unversioned as allowed by Policy 3.8.3.
+  * Bump Standards-Version to 3.8.3.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sat, 28 Nov 2009 22:08:23 -0500
+
+libperl-minimumversion-perl (1.20-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Alex Muntada ]
+  * debian/control: Added missing libfile-find-rule-perl-perl
+    in B-D-I (closes: #515305).
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+    + Bump build-dep on libtest-script-perl to >= 1.03.
+  * debian/copyright: Update years of copyright.
+  * Bump Standards Version to 3.8.1 (no changes).
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Sun, 12 Apr 2009 11:12:28 +0200
+
+libperl-minimumversion-perl (1.19-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+    + Bump versioned dependencies accordingly
+  * Add myself to Uploaders
+  * Convert debian/copyright to proposed machine-readable format
+
+  [ gregor herrmann ]
+  * debian/control: wrap a long line.
+  * debian/control: add build dependency on libtest-cpan-meta-perl
+    to enable an additional test.
+
+  [ Damyan Ivanov ]
+  * New upstream release
+    + bump libppi-perl (build-)dependency to 1.201
+    + add libfile-find-rule-perl-perl to Depends
+    + add libpod-simple-perl (>= 3.07) and libtest-minimumversion-perl to
+      B-D-I (enables more tests)
+  * add perl-modules (>= 5.10.0) | libversion-perl (>=0.74) to
+    (build-)dependencies
+  * add myself to Uploaders
+
+ -- Damyan Ivanov <dmn@debian.org>  Tue, 16 Sep 2008 17:44:29 +0300
+
+libperl-minimumversion-perl (0.15-1) unstable; urgency=low
+
+  * Initial release. (Closes: #495196: ITP: libperl-minimumversion-perl
+    -- find a minimum required version of perl for Perl code)
+
+ -- Vincent Danjean <vdanjean@debian.org>  Fri, 15 Aug 2008 13:49:43 +0200

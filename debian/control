@@ -1,0 +1,44 @@
+Source: libperl-minimumversion-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Vincent Danjean <vdanjean@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libfile-find-rule-perl <!nocheck>,
+                     libfile-find-rule-perl-perl <!nocheck>,
+                     libparams-util-perl <!nocheck>,
+                     libppi-perl <!nocheck>,
+                     libppix-regexp-perl <!nocheck>,
+                     libppix-utils-perl <!nocheck>,
+                     libtest-script-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libperl-minimumversion-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libperl-minimumversion-perl.git
+Homepage: https://metacpan.org/release/Perl-MinimumVersion
+Rules-Requires-Root: no
+
+Package: libperl-minimumversion-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libfile-find-rule-perl,
+         libfile-find-rule-perl-perl,
+         libparams-util-perl,
+         libppi-perl,
+         libppix-regexp-perl,
+         libppix-utils-perl
+Description: module to determine minimum required version of perl required
+ Perl::MinimumVersion is a module that inspects arbitrary Perl source code and
+ determines the minimum version of perl required to be able to run it. Because
+ it is based on PPI, it can do this without having to actually load the code.
+ .
+ Currently it tests both the syntax of your code, and the use of explicit
+ version dependencies such as "require 5.005".
+ .
+ Future plans are to also add support for tracing module dependencies.
